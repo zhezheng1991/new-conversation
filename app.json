@@ -1,0 +1,110 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-10-27T11:01:57.372Z",
+  "item": {
+    "title": "New Conversation"
+  },
+  "map": {
+    "type": "webmap",
+    "path": "./map.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "analysis",
+    "showHeader": true,
+    "theme": {
+      "mode": "light",
+      "accent": "default"
+    },
+    "layout": {
+      "right": {
+        "hidden": false,
+        "width": "330px",
+        "title": "Fell symbology",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "customMount",
+            "id": "fell-ramp-controls",
+            "title": "Prominence colour ramp"
+          }
+        ]
+      }
+    },
+    "widgets": [
+      {
+        "id": "default-home",
+        "type": "home",
+        "slot": "top-left",
+        "config": {}
+      },
+      {
+        "id": "default-scale-bar",
+        "type": "scaleBar",
+        "slot": "bottom-left",
+        "config": {}
+      },
+      {
+        "id": "default-legend",
+        "type": "legend",
+        "slot": "bottom-left",
+        "config": {}
+      },
+      {
+        "id": "default-layer-list",
+        "type": "layerList",
+        "slot": "top-right",
+        "config": {}
+      },
+      {
+        "id": "default-basemap-gallery",
+        "type": "basemapGallery",
+        "slot": "top-right",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": [
+      {
+        "id": "fell-ramp-selector",
+        "label": "Prominence color ramp selector",
+        "bundlePath": "./runtime/behaviors/fell-ramp-selector-f9dce179ef364b60.js",
+        "sourceSha256": "f9dce179ef364b607dd81b1c048236c0405c4e46d5cbf056ed9669d180bca968",
+        "modulePaths": [],
+        "config": {
+          "layerId": "1a17d06a3b7-layer-2",
+          "heightField": "Metres",
+          "prominenceField": "Drop_",
+          "heightMin": 37,
+          "heightMax": 978.07,
+          "prominenceMin": 0,
+          "prominenceMax": 912.2
+        },
+        "mounts": [
+          "fell-ramp-controls"
+        ],
+        "ownedLayerIds": [],
+        "interactions": [],
+        "installedAt": "2026-10-27T11:03:07.264Z"
+      }
+    ]
+  },
+  "nova": {
+    "basename": "8f67de07-752e-4e8c-b4e0-decfb37fb28e",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://www.arcgis.com",
+      "mapId": "output-7dec68c7-f980-42c8-bf2f-d8a1603356ae",
+      "mapName": "New Conversation",
+      "viewMode": "2d",
+      "capturedAt": "2026-10-27T11:01:57.371Z"
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": []
+  }
+}
